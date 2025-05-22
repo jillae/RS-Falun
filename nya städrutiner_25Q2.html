@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppdaterade Städrutiner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-icon {
+            font-size: 3rem; /* 48px */
+            line-height: 1;
+            display: block; /* Makes span take full width for centering */
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <!-- Visualization & Content Choices: 
+        Rapportinfo: PM om uppdaterade städrutiner.
+        Övergripande mål: Tydligt kommunicera nya rutiner på en enda sida med förbättrad läsbarhet.
+        Struktur: Sekventiella sektioner för "Sopkärl", "Städdukar", "Mopptvätt", nu med centrerade rubriker och ikoner per sektion för enhetligt flöde.
+        Sopkärl:
+            Mål: Informera om ny plats & procedur.
+            Presentation: Text, punktlistor. Ikon: 🗑️. Layout: Ikon och H2 centrerade ovanför texten.
+            Metod: HTML/Tailwind.
+        Städdukar:
+            Mål: Informera om nya dukar, fördelar, användning.
+            Presentation: Text, punktlistor för fördelar (med fetstil i början av varje punkt), steg-för-steg för användning (med en specifik mening i fetstil). Ikon: ✨. Layout: Ikon och H2 centrerade ovanför texten.
+            Metod: HTML/Tailwind.
+        Mopptvätt:
+            Mål: Informera om ny delad rutin, QR-kod.
+            Presentation: Text, punktlistor. Ikon: 🧺. Layout: Ikon och H2 centrerade ovanför texten.
+            Metod: HTML/Tailwind.
+        Inga diagram (Chart.js/Plotly.js) behövs då kvantitativ data saknas. Inga Gemini-funktioner.
+    -->
+    </head>
+<body class="bg-slate-50 text-slate-700 antialiased">
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-3xl">
+        <header class="mb-12 text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-800">Nya smidiga städrutiner- tillsammans gör vi det bättre</h1>
+        </header>
+
+        <main class="space-y-12">
+            <section class="p-6 bg-white rounded-lg shadow-md">
+                <p class="mb-4 text-lg">Hej alla fantastiska vänner!</p>
+                <p class="mb-4">Ett stort, varmt TACK till ert ovärderliga engagemang med att hålla våra gemensamma ytor fina och välkomnande! För att ytterligare förbättra och förenkla vårt arbete har vi uppdaterat städrutinerna, vilket vi tror gör arbetet effektivare och mer hygieniskt.</p>
+            </section>
+
+            <section id="sopkarlSection" class="p-6 bg-white rounded-lg shadow-md">
+                <div class="text-center mb-6">
+                    <span class="section-icon">🗑️</span>
+                    <h2 class="text-2xl font-semibold text-slate-800 mt-2">1. Ny smart placering av våra sopkärl</h2>
+                </div>
+                <div>
+                    <p class="mb-3">Förbättrad placering av sopkärlen; bakom redskapsboden. Detta ser trevligare ut och minskar risken för obehörig användning. Tack till de bröder som hjälpte till med förberedelse av ytan.</p>
+                    <ul class="list-disc list-inside space-y-2 mb-3">
+                    </ul>
+                </div>
+            </section>
+
+            <section id="staddukarSection" class="p-6 bg-slate-100 rounded-lg shadow-md">
+                 <div class="text-center mb-6">
+                    <span class="section-icon">✨</span>
+                    <h2 class="text-2xl font-semibold text-slate-800 mt-2">2. Effektiva och hygieniska städdukar – ett nytt system!</h2>
+                </div>
+                <div>
+                    <p class="mb-3 text-slate-600">Nyhet! Vi introducerar ett nytt, smart system med engångs-städdukar i papper, som ni kanske redan noterat via den nya dispensern i städförrådet. Dessa dukar erbjuder stor mångsidighet, är fördelaktiga för köksmiljöer och matarrangemang, och bidrar till en mer hygienisk och miljövänlig städning. Detaljerade instruktioner för hygienisk användning följer nedan.</p>
+                    <ul class="list-disc list-inside space-y-2 mb-3 bg-white p-4 rounded-md shadow">
+                        <li><strong>Mångsidiga:</strong> För speglar, glas, dörrar (repar ej!), blanka ytor, bord, bänkar, keramik och porslin. De är starka, luddfria och fungerar utmärkt med de alla typer av rengörings- och desinfektionsmedel.</li>
+                        <li><strong>Livsmedelsgodkända & dammfria:</strong> Utmärkta för kök och kan med fördel användas vid pionjärveckan/övriga matanordningar.</li>
+                        <li><strong>Smarta att använda:</strong> Som engångsmikrofiberdukar; en duk räcker till flera ytor (vändbara) eller kan delas.</li>
+                        <li><strong>Hygieniskt & miljövänligt:</strong> Höjer hygienen och materialet återvinns (brännbart/papper). Dukarna är tillverkade av förnybara fibrer.</li>
+                        <li><strong>Gamla mikrofiberdukar:</strong> Nuvrande mikrofiberdukar kan tvättas och behållas för ytor med lägre hygienkrav (ej livsmedelskontakt eller sanitetsutrymmen).</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-slate-800 mt-6 mb-3">Uppdaterad städrutin, förslag på hygienisk användning:</h3>
+                    <ul class="list-disc list-inside space-y-2 mb-3 bg-white p-4 rounded-md shadow">
+                        <li>Använd handskar för bästa hygien.</li>
+                        <li>Spraya avsett rengöringsmedel direkt på ytan som ska rengöras, eller lätt fukta duken med medlet. Följ alltid tillverkarens anvisningar för rengöringsmedlet, särskilt gällande verkningstid för desinfektion.</li>
+                        <li><strong>Arbeta systematiskt från rena ytor till smutsigare ytor.</strong> Detta är en grundläggande hygienprincip som minimerar spridning av smuts och bakterier. Till exempel:
+                            <ol class="list-decimal list-inside ml-4 mt-1 space-y-1">
+                                <li>Börja med speglar och glasytor: Använd en ren del av duken.</li>
+                                <li>Fortsätt med handfat och kranar: Använd en ny, ren del av duken (vik den). Spraya nytt medel avsett för handfatet.</li>
+                                <li>Avsluta med toaletten (utsida, ring, lock): Använd en ny, ren del av duken (vik igen) och rengöringsmedel avsett för toaletter.</li>
+                            </ol>
+                        </li>
+                        <li>En duk kan räcka till flera ytor om den viks och används metodiskt så att en ren yta på duken alltid används för nästa moment. Duken är dessutom designad för att klara av och absorbera en stor mängd vätska utan att gå sönder.</li>
+                        <li>Kassera duken efter användning.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="mopptvattSection" class="p-6 bg-white rounded-lg shadow-md">
+                <div class="text-center mb-6">
+                    <span class="section-icon">🧺</span>
+                    <h2 class="text-2xl font-semibold text-slate-800 mt-2">3. Ny, enkel och rimlig rutin för mopptvätt</h2>
+                </div>
+                <div>
+                    <p class="mb-3">För att fördela ansvaret och förenkla har vi en ny rutin för mopptvätt:</p>
+                    <ul class="list-disc list-inside space-y-2 mb-3">
+                        <li><strong>Delat ansvar:</strong> Ansvaret alternerar nu mellan båda våra församlingar.</li>
+                        <li><strong>Enligt schema:</strong> Vår församling tvättar under den vecka som är markerad för "mopptvätt" på städschemat (i början av varje månad).</li>
+                        <li><strong>Sällan per grupp:</strong> Varje församling ansvarar varannan månad (6 ggr/år). Detta delas inom tjänstegrupperna, så att varje grupp i praktiken tvättar sällan (ca en gång vartannat år).</li>
+                        <li><strong>Superenkla instruktioner:</strong> En tydlig instruktionsfilm finns via QR-kod på väggen i städförrådet och på tvättkorgen. Filmen visar och ger svar på alla frågor kring mopptvätt. Hur man gör, tvättmedel, program och torkning. Kanske en bra uppgift för engagerade ungdomar!</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="mt-12 p-6 bg-white rounded-lg shadow-md">
+                <p class="mb-4">Vi hoppas dessa uppdateringar tas emot positivt och underlättar för alla kära vänner. vi uppskattar ert engagemang. Hör av er vid frågor.</p>
+                <p class="mb-4">Än en gång, stort tack för ert fantastiska arbete och positiva inställning!</p>
+                <p class="font-semibold">Broderliga hälsningar,</p>
+                <p>Gilbert</p>
+                <p>Städsamordnare</p>
+            </section>
+        </main>
+
+        <footer class="text-center mt-12 py-6 border-t border-slate-200">
+            <p class="text-sm text-slate-500">&copy; <span id="currentYear"></span> RS Falun. Alla rättigheter förbehållna.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+
+</body>
+</html>
